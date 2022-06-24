@@ -3,6 +3,7 @@ package ru.netology;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ru.netology.manager.Manager;
+import ru.netology.repository.Repository;
 
 
 public class TicketTest {

@@ -1,19 +1,16 @@
 package ru.netology.manager;
 
-import ru.netology.Repository;
+import ru.netology.repository.Repository;
 import ru.netology.Ticket;
 
 import java.util.Arrays;
 
 public class Manager {
     private Repository repo;
-    private Ticket[] tickets = new Ticket[0];
 
     public Manager(Repository repo) {
         this.repo = repo;
     }
-    //private Ticket[] tickets = new Ticket[0];
-
     public Ticket[] findAllByFromTo(String from, String to) {
         Ticket[] ans = new Ticket[0];
         for (Ticket ticket : repo.findAll()) {
