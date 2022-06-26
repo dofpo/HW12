@@ -5,12 +5,9 @@ import org.junit.jupiter.api.Test;
 import ru.netology.manager.Manager;
 import ru.netology.repository.Repository;
 
-
 public class TicketTest {
-
     private Repository repo = new Repository();
     Manager manager = new Manager(repo);
-
     Ticket ticket1 = new Ticket(1, 500, "UFA", "ROV", 150);
     Ticket ticket2 = new Ticket(2, 700, "AAQ", "SVO", 70);
     Ticket ticket3 = new Ticket(3, 300, "SVO", "SEN", 400);

@@ -11,6 +11,7 @@ public class Manager {
     public Manager(Repository repo) {
         this.repo = repo;
     }
+
     public Ticket[] findAllByFromTo(String from, String to) {
         Ticket[] ans = new Ticket[0];
         for (Ticket ticket : repo.findAll()) {
@@ -21,7 +22,6 @@ public class Manager {
                 }
                 tmp[tmp.length - 1] = ticket;
                 ans = tmp;
-
             }
         }
         Arrays.sort(ans);
